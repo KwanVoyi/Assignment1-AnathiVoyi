@@ -33,7 +33,7 @@ public class Main {
         userAge = Integer.parseInt(age);
 
         Random randomAge = new Random();
-        appAge = randomAge.nextInt(90) + 18;
+        appAge = randomAge.nextInt(72) + 18;
 
         int maximumNumber = Math.max(appAge, userAge);
         int minimumNumber = Math.min(appAge, userAge);
@@ -41,7 +41,7 @@ public class Main {
         int compareAge = maximumNumber - minimumNumber;
 
 
-        if (maximumNumber > userAge) {
+        if (maximumNumber < userAge) {
             System.out.println("I'am " + userAge + " years old, " + "which is " + Math.abs(compareAge) + " older than you.");
         } else {
             System.out.println("I'am " + userAge + " years old, " + "which is " + Math.abs(compareAge) + " younger than you.");
